@@ -1,0 +1,39 @@
+@import '../base/theme';
+.storyImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--color-bg);
+  h2 {
+    background-color: var(--color-bg);
+  }
+  ul {
+    background-color: var(--color-bg);
+    height: auto;
+    margin-top: 10px;
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+      background-color: var(--color-bg);
+      margin-top: 20px;
+      position: relative;
+      margin-left: 20px;
+      li {
+        background-color: var(--color-bg);
+        img {
+          background-color: var(--color-bg);
+          width: 140px;
+          height: 190px;
+        }
+      }
+    }
+  }
+}

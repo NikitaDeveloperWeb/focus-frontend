@@ -1,0 +1,154 @@
+@import '../base/variable';
+@import '../base/theme';
+.nav_ligth {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-nav-bg);
+  box-shadow: 0px 2px 6px var(--color-nav-shadow);
+  z-index: 100;
+  nav {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    background-color: inherit;
+    ul {
+      display: flex;
+      align-items: center;
+      .activeItem {
+        color: var(--color-link-hover);
+      }
+    }
+    li {
+      background-color: inherit;
+      .logo {
+        background-color: inherit;
+        .logo_img {
+          background-color: inherit;
+          width: 65px;
+        }
+      }
+    }
+    ul {
+      background-color: inherit;
+      margin-left: 30px;
+      p {
+        background-color: inherit;
+      }
+      li {
+        margin-left: 10px;
+        background-color: inherit;
+        a {
+          background-color: inherit;
+          color: var(--color-nav-link);
+          &:hover {
+            color: var(--color-link-hover);
+            transition: 0.5s;
+          }
+          &:focus {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+  .setting {
+    margin-right: 20px;
+    background-color: inherit;
+    ul {
+      background-color: inherit;
+      li {
+        margin-left: 8px;
+        background-color: inherit;
+        a {
+          background-color: inherit;
+        }
+        .langOpen {
+          z-index: 1000;
+          width: 150px;
+          height: auto;
+          position: absolute;
+          margin-left: -120px;
+          border: 1px solid var(--color-lang-open);
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          ul {
+            li {
+              background-color: var(--color-bg);
+              font-size: 20px;
+              cursor: pointer;
+              &:hover {
+                color: var(--color-link-hover);
+              }
+            }
+            display: flex;
+            background-color: var(--color-bg);
+            flex-direction: column;
+          }
+          p {
+            font-size: 20px;
+            border-bottom: 1px solid var(--color-border-sign);
+          }
+        }
+        .langClose {
+          visibility: hidden;
+          font-size: 0;
+          width: 0;
+          height: 0;
+        }
+        .disablet {
+          font-size: 30px;
+          background-color: inherit;
+          cursor: pointer;
+          transition: 0.7s;
+        }
+        .active {
+          font-size: 30px;
+          background-color: inherit;
+          cursor: pointer;
+
+          path {
+            color: var(--color-setting-active-color);
+            transition: 0.7s;
+          }
+        }
+        svg {
+          font-size: 30px;
+          background-color: inherit;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 630px) {
+  .nav_ligth {
+    flex-direction: column;
+    nav {
+      display: flex;
+      margin-left: 0;
+      ul {
+        flex-direction: column;
+        margin-left: 0;
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .setting {
+      margin-right: 0;
+    }
+  }
+}

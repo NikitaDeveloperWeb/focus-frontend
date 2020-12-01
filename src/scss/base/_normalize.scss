@@ -1,0 +1,39 @@
+@import './variable';
+@import './theme';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.7s;
+}
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

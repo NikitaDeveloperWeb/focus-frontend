@@ -1,0 +1,13 @@
+//setting
+@import './base/normalize', './base/variable', './base/theme';
+//components
+@import './components/field', './components/button', './components/form', './components/navigations',
+  './components/profileIntro', './components/storyImage', './components/post',
+  './components/fullPost';
+//pages
+@import './pages/signIn', './pages/signUp', './pages/home', './pages/search', './pages/addEdit',
+  './pages/news';
+.app {
+  width: 100%;
+  height: 100%;
+}

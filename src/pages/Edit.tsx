@@ -1,0 +1,90 @@
+import React from 'react';
+import { Navigation } from '../components';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import axios from 'axios';
+import { selectUserData } from '../store/ducks/user/selectors';
+import { useSelector } from 'react-redux';
+
+const EditFormSchema = yup.object().shape({
+  username: yup.string(),
+  fullname: yup.string(),
+  date: yup.string(),
+  avatarUrl: yup.string(),
+});
+
+export interface EditProps {
+  username: string | undefined;
+  fullname: string | undefined;
+  date: string | undefined;
+  avatarUrl: string | undefined;
+}
+
+function Edit() {
+  //referents
+  const { register, handleSubmit } = useForm<EditProps>({
+    resolver: yupResolver(EditFormSchema),
+  });
+  const user = useSelector(selectUserData);
+  const onSubmit = async (data: EditProps): Promise<void> => {
+    try {
+      await axios.patch(`/edit/user/${user?._id}`, data);
+      window.location.reload();
+    } catch (error) {
+      console.log(`😱 Axios request failed: ${error}`);
+    }
+  };
+
+  return (
+    <div className="add_edit_form">
+      <Navigation />
+      <form action="" onSubmit={handleSubmit(onSubmit)}>
+        <h2>Edit your profile</h2>
+        <span>
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            className="input_ligth_add"
+            ref={register}
+          />
+        </span>
+        <span>
+          <input
+            type="text"
+            placeholder="fullname"
+            className="input_ligth_add"
+            name="fullname"
+            ref={register}
+          />
+        </span>
+        <span>
+          <input
+            type="date"
+            placeholder="date"
+            className="input_ligth_add"
+            name="date"
+            ref={register}
+          />
+        </span>
+        <span>
+          <input
+            type="text"
+            placeholder="avatar"
+            className="input_ligth_add"
+            name="avatarUrl"
+            ref={register}
+          />
+        </span>
+        <span>
+          <button type="submit" className="button_ligth">
+            Edit
+          </button>
+        </span>
+      </form>
+    </div>
+  );
+}
+
+export default Edit;

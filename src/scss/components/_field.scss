@@ -1,0 +1,17 @@
+@import '../base/variable';
+@import '../base/theme';
+.input_ligth {
+  width: 200px;
+  height: 30px;
+  border: 1px solid var(--color-border-sign);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15;
+
+  &::placeholder {
+    color: var(--color-username-profile);
+  }
+  &:focus {
+    border: 1px solid (--color-border-sign);
+  }
+}

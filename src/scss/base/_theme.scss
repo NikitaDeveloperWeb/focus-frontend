@@ -1,0 +1,67 @@
+[data-theme='ligth'] {
+  --color-bg: #fff;
+  --color-font: rgba(0, 0, 0, 0.79);
+  --color-border-sign: #000;
+  --color-button: #289ddf;
+  --color-button-text: rgb(255, 255, 255);
+  --color-button-hover: rgb(57, 115, 240);
+  --color-shadow-one: rgba(0, 0, 0, 0.6);
+  --color-shadow-two: rgba(0, 0, 0, 0.2);
+  --color-link: #289ddf;
+  --color-link-hover: #0a6296;
+  --color-nav-bg: #f8f8f8;
+  --color-nav-link: rgba(0, 0, 0, 0.79);
+  --color-lang-open: #ddd;
+  --color-nav-shadow: rgba(115, 113, 113, 0.25);
+  --color-setting-color: rgba(0, 0, 0, 0.79);
+  --color-setting-active-color: #289ddf;
+  --color-profile-intro: #fcf8f8;
+  --color-username-profile: #d6d6d6;
+  --color-date-profile: #55cfff;
+  --color-post-username: #55cfff;
+  --color-post-date: #d6d6d6;
+  --color-like: rgba(0, 0, 0, 0.79);
+  --color-like-active: lightcoral;
+  --color-post-open: #55cfff;
+  --color-post-close: lightcoral;
+  --color-aside-post: rgba(241, 241, 241, 0.445);
+  --color-arrow: #b9b9b9;
+  --color-aside-hover: rgb(211, 232, 250);
+  --color-arrow-hover: rgb(82, 123, 255);
+  --color-search-border: #dfdfdf;
+  --color-border-razdelitel: lightgray;
+}
+
+[data-theme='dark'] {
+  --color-bg: #2a263b;
+  --color-font: rgba(245, 245, 245, 0.79);
+  --color-border-sign: rgb(230, 230, 230);
+  --color-button: #de31ee;
+  --color-button-text: rgb(20, 20, 20);
+  --color-button-hover: rgb(238, 11, 170);
+  --color-shadow-one: rgba(0, 0, 0, 0.6);
+  --color-shadow-two: rgba(0, 0, 0, 0.2);
+  --color-link: #b232ee;
+  --color-link-hover: #7a06e6;
+  --color-nav-bg: #3e4058;
+  --color-nav-link: rgba(228, 228, 228, 0.79);
+  --color-lang-open: rgb(78, 78, 82);
+  --color-nav-shadow: rgba(32, 32, 32, 0.25);
+  --color-setting-color: rgba(0, 0, 0, 0.79);
+  --color-setting-active-color: #b1309b;
+  --color-profile-intro: #273255;
+  --color-username-profile: #d6d6d6;
+  --color-date-profile: #55cfff;
+  --color-post-username: #55cfff;
+  --color-post-date: #d6d6d6;
+  --color-like: rgba(0, 0, 0, 0.79);
+  --color-like-active: lightcoral;
+  --color-post-open: #55cfff;
+  --color-post-close: lightcoral;
+  --color-aside-post: rgba(80, 80, 80, 0.445);
+  --color-arrow: #d6d6d6;
+  --color-aside-hover: rgb(57, 63, 68);
+  --color-arrow-hover: rgb(208, 46, 248);
+  --color-search-border: #d4d4d4;
+  --color-border-razdelitel: rgb(51, 51, 51);
+}
