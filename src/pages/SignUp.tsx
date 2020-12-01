@@ -39,7 +39,7 @@ function SignUp() {
 
   const onSubmit = async (data: RegisterProps) => {
     try {
-      axios.post('/auth/register', data);
+      axios.post('https://focus-network.herokuapp.com/auth/register', data);
     } catch (error) {}
   };
 

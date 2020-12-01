@@ -31,7 +31,7 @@ function AddPost() {
     try {
       data.user = user?.username;
       data.published = new Date().toUTCString();
-      axios.post('/post', data);
+      axios.post('https://focus-network.herokuapp.com/post/', data);
     } catch (error) {}
   };
   return (

@@ -29,7 +29,7 @@ function Edit() {
   const user = useSelector(selectUserData);
   const onSubmit = async (data: EditProps): Promise<void> => {
     try {
-      await axios.patch(`/edit/user/${user?._id}`, data);
+      await axios.patch(`https://focus-network.herokuapp.com/edit/user/${user?._id}`, data);
       window.location.reload();
     } catch (error) {
       console.log(`😱 Axios request failed: ${error}`);
