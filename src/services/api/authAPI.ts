@@ -7,10 +7,13 @@ interface ResponseApi {
 
 export const AuthApi = {
   async signIn(postData: LoginProps): Promise<ResponseApi> {
-    const { data } = await axios.post<ResponseApi>('http://localhost:8888/auth/login', {
-      username: postData.email,
-      password: postData.password,
-    });
+    const { data } = await axios.post<ResponseApi>(
+      'https://focus-network.herokuapp.com/auth/login/',
+      {
+        username: postData.email,
+        password: postData.password,
+      },
+    );
     return data;
   },
   async getMe(): Promise<ResponseApi> {
