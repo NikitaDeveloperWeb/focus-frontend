@@ -49,8 +49,8 @@ function Navigations() {
 
   const logout = async () => {
     await axios.get('https://focus-network.herokuapp.com/logout').then(() => {
-      localStorage.removeItem('token');
-      localStorage.clear();
+      // localStorage.removeItem('token');
+      window.localStorage.clear();
       window.location.reload();
     });
   };
