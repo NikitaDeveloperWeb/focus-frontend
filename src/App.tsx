@@ -33,6 +33,7 @@ function App() {
       history.push('/home');
     }
   }, [history, isAuth]);
+  //app
   return (
     <div className="App">
       <Switch>
