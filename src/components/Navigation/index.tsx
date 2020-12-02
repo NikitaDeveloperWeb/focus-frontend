@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 //img
 import logo from '../../assets/img/logo.png';
 //icons
@@ -46,7 +46,7 @@ function Navigations() {
   const onSelectItem = (index: number) => {
     setActiveItem(index);
   };
-
+  const history = useHistory();
   const logout = () => {
     // await axios.get('https://focus-network.herokuapp.com/logout').then(() => {
 
@@ -54,6 +54,7 @@ function Navigations() {
     localStorage.removeItem('token');
     console.log(localStorage.getItem('token'));
     window.localStorage.clear();
+    history.push('/');
     // window.location.reload();
     console.log('logout');
   };
@@ -100,9 +101,7 @@ function Navigations() {
             {(theme && <Brightness4Icon />) || <Brightness5Icon />}
           </li>
           <li onClick={() => logout()}>
-            <Link to="/">
-              <PowerSettingsNewIcon />
-            </Link>
+            <PowerSettingsNewIcon />
           </li>
         </ul>
       </div>
