@@ -50,9 +50,10 @@ function Navigations() {
   const logout = async () => {
     await axios.get('https://focus-network.herokuapp.com/logout').then(() => {
       // localStorage.removeItem('token');
-      console.log(localStorage.getItem('token'));
-      window.localStorage.clear();
-      window.location.reload();
+      // console.log(localStorage.getItem('token'));
+      // window.localStorage.clear();
+      // window.location.reload();
+      console.log('logout');
     });
   };
   const [theme, setTheme] = React.useState(true);
