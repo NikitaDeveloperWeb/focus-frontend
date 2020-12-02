@@ -22,11 +22,12 @@
     flex-direction: row;
     justify-content: center;
     span {
+      margin-left: 20px;
       a {
         background-color: var(--color-bg);
         margin-top: 20px;
         position: relative;
-        margin-left: 20px;
+
         li {
           background-color: var(--color-bg);
           img {

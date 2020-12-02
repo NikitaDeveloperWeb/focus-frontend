@@ -53,15 +53,18 @@ function Search() {
           </form>
 
           {users.data.map((user) => (
-            <Link to={`user/${user._id}`} key={user._id}>
-              <ProfileIntro
-                edit={false}
-                className="profile_intro_Search"
-                fullname={user?.fullname}
-                username={user?.username}
-                avatar={user.avatarUrl}
-              />
-            </Link>
+            <span>
+              <Link to={`user/${user._id}`} key={user._id}>
+                <ProfileIntro
+                  edit={false}
+                  className="profile_intro_Search"
+                  fullname={user?.fullname}
+                  username={user?.username}
+                  avatar={user.avatarUrl}
+                  key={user._id}
+                />
+              </Link>
+            </span>
           ))}
         </div>
       </div>

@@ -1,5 +1,7 @@
 @import '../base/theme';
 .search_wrapper {
+  height: 100vh;
+  width: 100%;
   header {
     z-index: 1000;
     position: relative;
@@ -7,7 +9,7 @@
 }
 .search {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -17,8 +19,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
-
+    height: 100%;
     form {
       h2 {
         font-size: 40px;
@@ -29,7 +30,8 @@
       display: flex;
       flex-direction: column;
       border-bottom: 1px solid var(--color-border-razdelitel);
-
+      justify-content: center;
+      align-items: center;
       span {
         margin-top: 10px;
         input {
@@ -44,42 +46,46 @@
         }
       }
     }
-    a {
-      width: 30%;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      .profile_intro_Search {
-        border: 1px solid var(--color-search-border);
+    span {
+      // width: 30%;
+      padding: 5px;
+      a {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 10px;
-        padding: 5px;
         width: 100%;
-        section {
+        .profile_intro_Search {
+          border: 1px solid var(--color-search-border);
+          border-radius: 10px;
+          padding: 10px;
           width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            width: 70px;
-            border-radius: 100px;
-          }
-          ul {
-            position: relative;
-            margin-left: 20px;
+          section {
+            width: 100%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            flex-direction: column;
-            .notVisable {
-              visibility: hidden;
-              height: 0;
+            justify-content: center;
+            img {
+              width: 70px;
+              border-radius: 100px;
             }
-            :nth-child(4n) {
-              visibility: hidden;
-              height: 0;
-              width: 0;
+            ul {
+              position: relative;
+              margin-left: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              .notVisable {
+                visibility: hidden;
+                height: 0;
+              }
+              :nth-child(4n) {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+              }
             }
           }
         }
