@@ -42,7 +42,7 @@ function SignIn() {
   React.useEffect(() => {
     if (loadingStatus === LoadingState.SUCCESS) {
       openNotificationRef.current('Success authorization!', 'success');
-      window.location.reload();
+      // window.location.reload();
     } else if (loadingStatus === LoadingState.ERROR) {
       openNotificationRef.current('Wrong login or password', 'error');
     }
