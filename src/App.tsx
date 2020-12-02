@@ -32,7 +32,7 @@ function App() {
   }, []);
   React.useEffect(() => {
     if (isAuth) {
-      history.push('https://focus-front.herokuapp.com/home');
+      history.push('/home');
     }
     console.log(isAuth);
   }, [history, isAuth]);
