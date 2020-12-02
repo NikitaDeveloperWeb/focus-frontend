@@ -40,7 +40,11 @@ function Home() {
           <h2>My photo</h2>
           <ul>
             {postArray.map((post, index) => (
-              <StoryImage imageUrl={post.imageUrl} id={post._id} key={`${post._id}+${index}`} />
+              <StoryImage
+                imageUrl={post.imageUrl}
+                id={post._id}
+                key={`${post._id}+${index}+${user?._id}`}
+              />
             ))}
           </ul>
         </div>
