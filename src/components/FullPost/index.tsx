@@ -6,7 +6,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 function PostFull() {
   const href = window.location.href.toString();
-  let idPost = href.split('http://localhost:3000/home/post/');
+  let idPost = href.split('https://focus-front.herokuapp.com/home/post/');
   let postFull;
 
   const posts = useSelector(SelectPostItems);

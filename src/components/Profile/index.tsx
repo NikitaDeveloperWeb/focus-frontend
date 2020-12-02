@@ -8,7 +8,7 @@ import { selectUsers } from '../../store/ducks/users/selectors';
 
 function Profile() {
   const href = window.location.href.toString();
-  let idUser = href.split('http://localhost:3000/home/user/');
+  let idUser = href.split('https://focus-front.herokuapp.com/home/user/');
 
   let profile;
   let userid;

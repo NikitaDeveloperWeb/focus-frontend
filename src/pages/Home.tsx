@@ -39,8 +39,8 @@ function Home() {
         <div className="storyImage">
           <h2>My photo</h2>
           <ul>
-            {postArray.map((post) => (
-              <StoryImage imageUrl={post.imageUrl} id={post._id} key={post._id} />
+            {postArray.map((post, index) => (
+              <StoryImage imageUrl={post.imageUrl} id={post._id} key={`${post._id}+${index}`} />
             ))}
           </ul>
         </div>
