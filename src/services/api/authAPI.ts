@@ -17,7 +17,7 @@ export const AuthApi = {
     return data;
   },
   async getMe(): Promise<ResponseApi> {
-    const { data } = await axios.get<ResponseApi>('http://localhost:8888/users/me');
+    const { data } = await axios.get<ResponseApi>('https://focus-network.herokuapp.com/users/me');
     return data;
   },
 };
