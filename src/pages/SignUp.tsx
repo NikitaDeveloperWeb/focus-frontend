@@ -1,6 +1,6 @@
 //libs
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -32,6 +32,7 @@ export interface RegisterProps {
 }
 
 function SignUp() {
+  const history = useHistory();
   //referents
   const { register, handleSubmit } = useForm<RegisterProps>({
     resolver: yupResolver(RegisterFormSchema),
@@ -40,6 +41,7 @@ function SignUp() {
   const onSubmit = async (data: RegisterProps) => {
     try {
       axios.post('https://focus-network.herokuapp.com/auth/register', data);
+      history.push('/');
     } catch (error) {}
   };
 

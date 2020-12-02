@@ -7,6 +7,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useSelector } from 'react-redux';
 import { selectUserData } from '../store/ducks/user/selectors';
+import { useHistory } from 'react-router-dom';
 
 //схема валидации
 const AddPostFormSchema = yup.object().shape({
@@ -27,11 +28,13 @@ function AddPost() {
     resolver: yupResolver(AddPostFormSchema),
   });
   const user = useSelector(selectUserData);
+  const history = useHistory();
   const onSubmit = async (data: PostProps) => {
     try {
       data.user = user?.username;
       data.published = new Date().toUTCString();
       axios.post('https://focus-network.herokuapp.com/post/', data);
+      history.push('/home');
     } catch (error) {}
   };
   return (

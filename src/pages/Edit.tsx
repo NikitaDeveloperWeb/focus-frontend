@@ -6,6 +6,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 import { selectUserData } from '../store/ducks/user/selectors';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 const EditFormSchema = yup.object().shape({
   username: yup.string(),
@@ -26,11 +27,13 @@ function Edit() {
   const { register, handleSubmit } = useForm<EditProps>({
     resolver: yupResolver(EditFormSchema),
   });
+  const history = useHistory();
   const user = useSelector(selectUserData);
   const onSubmit = async (data: EditProps): Promise<void> => {
     try {
       await axios.patch(`https://focus-network.herokuapp.com/edit/user/${user?._id}`, data);
       window.location.reload();
+      history.push('/home');
     } catch (error) {
       console.log(`😱 Axios request failed: ${error}`);
     }
