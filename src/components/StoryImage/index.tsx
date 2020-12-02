@@ -11,11 +11,13 @@ interface StoryImageProps {
 
 function StoryImage({ imageUrl, description, published, user, id }: StoryImageProps) {
   return (
-    <Link to={`/home/post/${id}`}>
-      <li>
-        <img src={imageUrl} alt="" />
-      </li>
-    </Link>
+    <span>
+      <Link to={`/home/post/${id}`}>
+        <li>
+          <img src={imageUrl} alt="" />
+        </li>
+      </Link>
+    </span>
   );
 }
 
