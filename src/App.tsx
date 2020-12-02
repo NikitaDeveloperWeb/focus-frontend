@@ -21,10 +21,8 @@ function App() {
     try {
       const { data } = await AuthApi.getMe();
       dispatch(setUserData(data));
-      history.replace('https://focus-front.herokuapp.com/home');
-    } catch (error) {
-      console.log(error);
-    }
+      history.replace('/home');
+    } catch (error) {}
   };
   React.useEffect(() => {
     checkAuth();
@@ -34,7 +32,6 @@ function App() {
     if (isAuth) {
       history.push('/home');
     }
-    console.log(isAuth);
   }, [history, isAuth]);
   return (
     <div className="App">
