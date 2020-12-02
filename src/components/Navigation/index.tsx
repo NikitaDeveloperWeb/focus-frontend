@@ -6,7 +6,7 @@ import logo from '../../assets/img/logo.png';
 import LanguageIcon from '@material-ui/icons/Language';
 import Brightness5Icon from '@material-ui/icons/Brightness5';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
-import axios from 'axios';
+// import axios from 'axios';
 
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
@@ -47,14 +47,15 @@ function Navigations() {
     setActiveItem(index);
   };
 
-  const logout = async () => {
-    await axios.get('https://focus-network.herokuapp.com/logout').then(() => {
-      // localStorage.removeItem('token');
-      // console.log(localStorage.getItem('token'));
-      // window.localStorage.clear();
-      // window.location.reload();
-      console.log('logout');
-    });
+  const logout = () => {
+    // await axios.get('https://focus-network.herokuapp.com/logout').then(() => {
+
+    // });
+    localStorage.removeItem('token');
+    console.log(localStorage.getItem('token'));
+    window.localStorage.clear();
+    // window.location.reload();
+    console.log('logout');
   };
   const [theme, setTheme] = React.useState(true);
 
