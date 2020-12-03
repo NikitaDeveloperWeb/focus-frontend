@@ -7,8 +7,7 @@ import { SelectPostItems } from '../store/ducks/posts/selectors';
 
 function News() {
   const dispatch = useDispatch();
-
-  const post = useSelector(SelectPostItems);
+  let post = useSelector(SelectPostItems);
 
   React.useEffect(() => {
     dispatch(fetchPosts());

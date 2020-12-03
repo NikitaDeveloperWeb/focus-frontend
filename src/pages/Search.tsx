@@ -61,7 +61,6 @@ function Search() {
                   fullname={user?.fullname}
                   username={user?.username}
                   avatar={user.avatarUrl}
-                  key={user._id}
                 />
               </Link>
             </span>
