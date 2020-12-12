@@ -29,7 +29,7 @@ function Navigations() {
       link: <Link to="/home/add">Опубликовать</Link>,
     },
     {
-      link: <Link to="/home/search">Поиск</Link>,
+      link: <Link to="/home/search">Поиске</Link>,
     },
   ];
 
