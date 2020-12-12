@@ -32,7 +32,7 @@ function Navigations() {
       link: <Link to="/home/search">Поиске</Link>,
     },
   ];
-
+  //shifting lang
   //язык
   //состояние объявленного языка
   let [langOpen, setlangOpen] = React.useState(false);
