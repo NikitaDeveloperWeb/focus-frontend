@@ -53,7 +53,7 @@ function Profile() {
       <div className="content" id="content_block">
         {profile}
         <div className="storyImage">
-          <h2>Photo</h2>
+          <h2>Фотографии</h2>
           <ul>
             {postArray.map((post) => (
               <StoryImage imageUrl={post.imageUrl} id={post._id} key={post._id} />

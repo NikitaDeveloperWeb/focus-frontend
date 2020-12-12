@@ -61,12 +61,12 @@ function SignIn() {
                 <h1>Focus</h1>
               </div>
               <form onSubmit={handleSubmit(onSubmit)} method="POST">
-                <h2>Sign Up</h2>
+                <h2>Вход</h2>
                 <span>
                   <input
                     name="email"
                     type="email"
-                    placeholder="Mail"
+                    placeholder="Почта"
                     ref={register}
                     className="input_ligth"
                   />
@@ -75,26 +75,26 @@ function SignIn() {
                   <input
                     name="password"
                     type="password"
-                    placeholder="Password"
+                    placeholder="Пароль"
                     ref={register}
                     className="input_ligth"
                   />
                 </span>
                 <span>
                   <button type="submit" className="button_ligth">
-                    Sign in
+                    Войти
                   </button>
                 </span>
                 <span>
                   <ul>
                     <li>
-                      <Link to="/registration">Registration</Link>
+                      <Link to="/registration">Регистрация</Link>
                     </li>
                   </ul>
                 </span>
               </form>
               <footer>
-                <p>Focus - all rights reserved 2020.</p>
+                <p>Focus - все права защищены 2020.</p>
               </footer>
             </div>
           </div>

@@ -46,18 +46,14 @@
         }
       }
     }
-    #user {
-      margin-top: 30px;
-      width: 40%;
-      // // width: 30%;
-      // padding: 5px;
-      // a {
-      //   padding: 10px;
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   border-radius: 10px;
-      //   width: 100%;
+
+    a {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      width: 100%;
       .profile_intro_Search {
         border: 1px solid var(--color-search-border);
         border-radius: 10px;
@@ -93,16 +89,17 @@
       }
     }
   }
-}
-@media screen and (max-width: 650px) {
-  .search {
-    overflow-y: scroll;
-    .search_block {
-      form {
-        width: 80%;
-      }
-      a {
-        width: 80%;
+
+  @media screen and (max-width: 650px) {
+    .search {
+      overflow-y: scroll;
+      .search_block {
+        form {
+          width: 80%;
+        }
+        a {
+          width: 80%;
+        }
       }
     }
   }

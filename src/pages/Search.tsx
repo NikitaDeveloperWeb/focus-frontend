@@ -41,13 +41,13 @@ function Search() {
       <div className="search">
         <div className="search_block">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <h2>Search users</h2>
+            <h2>Поиск пользователей</h2>
             <span>
-              <input type="text" placeholder="Write username" ref={register} name="username" />
+              <input type="text" placeholder="Имя пользователя" ref={register} name="username" />
             </span>
             <span>
               <button type="submit" className="button_ligth">
-                Sign up
+                Найти
               </button>
             </span>
           </form>

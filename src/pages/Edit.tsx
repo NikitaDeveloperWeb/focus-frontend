@@ -43,11 +43,11 @@ function Edit() {
     <div className="add_edit_form">
       <Navigation />
       <form action="" onSubmit={handleSubmit(onSubmit)}>
-        <h2>Edit your profile</h2>
+        <h2>Редактировать профиль</h2>
         <span>
           <input
             type="text"
-            placeholder="username"
+            placeholder="Имя пользователя"
             name="username"
             className="input_ligth_add"
             ref={register}
@@ -56,7 +56,7 @@ function Edit() {
         <span>
           <input
             type="text"
-            placeholder="fullname"
+            placeholder="Полное имя"
             className="input_ligth_add"
             name="fullname"
             ref={register}
@@ -65,7 +65,7 @@ function Edit() {
         <span>
           <input
             type="date"
-            placeholder="date"
+            placeholder="Дата"
             className="input_ligth_add"
             name="date"
             ref={register}
@@ -74,7 +74,7 @@ function Edit() {
         <span>
           <input
             type="text"
-            placeholder="avatar"
+            placeholder="URL аватара"
             className="input_ligth_add"
             name="avatarUrl"
             ref={register}
@@ -82,7 +82,7 @@ function Edit() {
         </span>
         <span>
           <button type="submit" className="button_ligth">
-            Edit
+            Редактировать
           </button>
         </span>
       </form>

@@ -41,13 +41,13 @@ function AddPost() {
     <div className="add_edit_form">
       <Navigation />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h2>Add post</h2>
+        <h2>Добавить пост</h2>
         <span>
           <textarea
             name="text"
             ref={register}
             className="input_ligth"
-            placeholder="Text"></textarea>
+            placeholder="Текст"></textarea>
         </span>
         <span>
           <input
@@ -55,12 +55,12 @@ function AddPost() {
             name="imageUrl"
             ref={register}
             className="input_ligth"
-            placeholder="Image url"
+            placeholder="URL фото"
           />
         </span>
         <span>
           <button type="submit" className="button_ligth">
-            Add post
+            Добавить
           </button>
         </span>
       </form>

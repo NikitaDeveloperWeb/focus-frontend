@@ -17,7 +17,7 @@ function News() {
     <div className="news">
       <Navigation />
       <div className="news_block">
-        <h1>News</h1>
+        <h1>Новости</h1>
         {post.map((post) => (
           <Post
             text={post.text}

@@ -1,5 +1,6 @@
 import React from 'react';
 import editIcon from '../../assets/img/PancelEdit.png';
+import { Link } from 'react-router-dom';
 interface ProfileIntroProps {
   _id?: string | undefined;
   avatar?: string | undefined;
@@ -19,11 +20,9 @@ function ProfileIntro({ avatar, fullname, username, date, className, edit }: Pro
           <li>{'@' + username}</li>
           <li>{date}</li>
           <li>
-            <a
-              href="https://focus-front.herokuapp.com//home/edit/"
-              className={edit ? 'visable' : 'notVisable'}>
+            <Link to="/home/edit" className={edit ? 'visable' : 'notVisable'}>
               <img src={editIcon} alt="" />
-            </a>
+            </Link>
           </li>
         </ul>
       </section>

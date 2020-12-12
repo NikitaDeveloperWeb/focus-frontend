@@ -41,7 +41,7 @@ function Post({ image, text, user, published, className, _idUs }: PostProps) {
       <li>
         <img src={image} alt="" />
         <p className={open ? 'open' : 'close'}>{text}</p>
-        <button onClick={() => openText(open)}>{open ? 'close' : 'open'}</button>
+        <button onClick={() => openText(open)}>{open ? 'закрыть' : 'открыть'}</button>
         <div className="data_of_post">
           <h3>{userLink}</h3>
           <h2>{published}</h2>

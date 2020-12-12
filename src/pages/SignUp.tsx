@@ -54,12 +54,12 @@ function SignUp() {
           <h1>Focus</h1>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h2>Sign Up</h2>
+          <h2>Регистрация</h2>
           <span>
             <input
               type="text"
               name="username"
-              placeholder="Username"
+              placeholder="Имя пользователя"
               ref={register}
               className="input_ligth"
             />
@@ -68,7 +68,7 @@ function SignUp() {
             <input
               type="email"
               name="email"
-              placeholder="Mail"
+              placeholder="Почта"
               ref={register}
               className="input_ligth"
             />
@@ -77,7 +77,7 @@ function SignUp() {
             <input
               type="text"
               name="fullname"
-              placeholder="Fullname"
+              placeholder="Полное имя"
               ref={register}
               className="input_ligth"
             />
@@ -86,7 +86,7 @@ function SignUp() {
             <input
               type="date"
               name="date"
-              placeholder="Date"
+              placeholder="Дата"
               ref={register}
               className="input_ligth"
             />
@@ -95,7 +95,7 @@ function SignUp() {
             <input
               type="text"
               name="avatarUrl"
-              placeholder="Avatar url"
+              placeholder="URL аватара"
               ref={register}
               className="input_ligth"
             />
@@ -104,7 +104,7 @@ function SignUp() {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Пароль"
               ref={register}
               className="input_ligth"
             />
@@ -113,26 +113,26 @@ function SignUp() {
             <input
               name="password2"
               type="password"
-              placeholder="Repeat password"
+              placeholder="Повторите пароль"
               ref={register}
               className="input_ligth"
             />
           </span>
           <span>
             <button type="submit" className="button_ligth">
-              Sign up
+              Зарегистрироваться
             </button>
           </span>
           <span>
             <ul>
               <li>
-                <Link to="">Login</Link>
+                <Link to="">Вход</Link>
               </li>
             </ul>
           </span>
         </form>
         <footer>
-          <p>Focus - all rights reserved 2020.</p>
+          <p>Focus - все права защищены 2020.</p>
           <br />
         </footer>
       </div>

@@ -37,7 +37,7 @@ function Home() {
           edit={true}
         />
         <div className="storyImage">
-          <h2>My photo</h2>
+          <h2>Мои фотографии</h2>
           <ul>
             {postArray.map((post, index) => (
               <StoryImage
