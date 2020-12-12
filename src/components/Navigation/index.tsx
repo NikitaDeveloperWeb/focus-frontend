@@ -23,13 +23,13 @@ function Navigations() {
       ),
     },
     {
-      link: <Link to="/home/news">News</Link>,
+      link: <Link to="/home/news">Новости</Link>,
     },
     {
-      link: <Link to="/home/add">Add post</Link>,
+      link: <Link to="/home/add">Опубликовать</Link>,
     },
     {
-      link: <Link to="/home/search">Search</Link>,
+      link: <Link to="/home/search">Поиск</Link>,
     },
   ];
 
